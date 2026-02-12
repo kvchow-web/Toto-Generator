@@ -1,1 +1,115 @@
-/* Add styles here */
+:root {
+  --background-color: #f0f2f5;
+  --app-background-color: #ffffff;
+  --primary-color: #4f46e5;
+  --primary-hover-color: #4338ca;
+  --text-color: #333333;
+  --number-bg-color: #e0e7ff;
+  --number-text-color: #3730a3;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAANklEQVRoQ+3AEQEAIAgAsMF/d/gpDRgKAwECgYBAICCQCAgEAoGAQEAgEBAICIRAOxJ3/4cAC/gL+QAAAABJRU5ErkJggg==');
+  opacity: 0.05;
+  z-index: -1;
+}
+
+main {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+#app {
+  background-color: var(--app-background-color);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+#generate-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(79, 70, 229, 0.2);
+}
+
+#generate-btn:hover {
+  background-color: var(--primary-hover-color);
+  box-shadow: 0 7px 14px rgba(79, 70, 229, 0.3);
+}
+
+#numbers-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  min-height: 60px;
+}
+
+.number-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--number-bg-color);
+  color: var(--number-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 480px) {
+  #app {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #generate-btn {
+    padding: 12px 24px;
+  }
+
+  .number-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
