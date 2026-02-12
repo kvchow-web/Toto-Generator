@@ -8,7 +8,7 @@ A simple, clean, and mobile-responsive web application to generate random number
 
 ### Visual Design
 - **Layout:** A centered, single-column layout that is easy to use on both desktop and mobile devices.
-- **Color Scheme:** A modern and clean color palette.
+- **Color Scheme:** A modern red and black color palette.
 - **Typography:** Clear and readable fonts.
 - **Components:**
     - A prominent title.
@@ -28,3 +28,7 @@ A simple, clean, and mobile-responsive web application to generate random number
 2.  **Update `index.html`:** Structure the web page with a title, a button, and a container for the generated numbers. (Completed)
 3.  **Update `style.css`:** Apply styles for the layout, colors, fonts, and overall aesthetic. (Completed)
 4.  **Update `main.js`:** Implement the logic for generating and displaying the Toto numbers when the user clicks the button. (Completed)
+
+## Change History
+
+- **2026-02-12:** Changed the color scheme to red and black.

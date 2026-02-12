@@ -1,11 +1,11 @@
 :root {
-  --background-color: #f0f2f5;
-  --app-background-color: #ffffff;
-  --primary-color: #4f46e5;
-  --primary-hover-color: #4338ca;
-  --text-color: #333333;
-  --number-bg-color: #e0e7ff;
-  --number-text-color: #3730a3;
+  --background-color: #1a1a1a;
+  --app-background-color: #2c2c2c;
+  --primary-color: #e53e3e;
+  --primary-hover-color: #c53030;
+  --text-color: #ffffff;
+  --number-bg-color: #e53e3e;
+  --number-text-color: #ffffff;
 }
 
 body {
